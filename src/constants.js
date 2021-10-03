@@ -1,5 +1,4 @@
 const PROTOCOL = 'https://';
-const HOST = 'forum.guildnox.com';
 const API_PATH_USERS_LIST = '/admin/users/list/active.json';
 const API_PATH_USER = '/u';
 const API_RESOURCE_EXTENSION = '.json';
