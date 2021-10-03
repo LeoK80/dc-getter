@@ -47,6 +47,7 @@ const getUser = async (userName) => {
       .then(response => {
         resolve(new User(response.user.id,
           response.user.username,
+          response.user.user_fields['8'] || 'unknown',
           response.user.user_fields['9'] || 'unknown',
           response.user.user_fields['10'] || 'unknown',
           response.user.primary_group_name
