@@ -8,17 +8,22 @@ export default class User {
     this.group = group;
   }
 
-  groups = ['founder', 'guide', 'ascendant', 'member', 'iniitate'];
-
-  comparator = (user1, user2) => {
-    user1GroupIndex = groups.indexof(user1.group.toLowercase());
-    user2GroupIndex = groups.indexof(user2.group.toLowercase());
+  static comparator = (user1, user2) => {
+    const groups = ['founder', 'guide', 'ascendant', 'member', 'initiate'];
+    const user1GroupIndex = groups.indexOf(String(user1.group).toLowerCase());
+    const user2GroupIndex = groups.indexOf(String(user2.group).toLowerCase());
     if (user1GroupIndex < user2GroupIndex) {
       return -1;
     } else if (user1GroupIndex > user2GroupIndex) {
       return 1;
     } else {
-      return 0;
+      if (user1.name < user2.name) {
+        return -1;
+      } else if (user1.name > user2.name) {
+        return 1;
+      } else {
+        return 0;
+      }
     }
   };
 

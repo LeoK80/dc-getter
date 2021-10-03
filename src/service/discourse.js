@@ -63,9 +63,11 @@ const getUserInfo = async () => {
   const userNames = await getUsernames();
   return Promise.all(userNames.map(username => getUser(username)))
     .then(result => {
+      result.sort(User.comparator);
       return result;
     })
     .catch(error => {
+      console.log(error);
       return 'get user info error';
     });
 }
