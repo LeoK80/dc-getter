@@ -5,6 +5,7 @@ Discourse API getter client. Get info out your discourse server.
 - HOST - set the hostname of your discourse server (```forum.example.com```)
 - API_KEY - set the generated discourse user API key
 - API_USERNAME - set the username for which the API key was generated
+- PORT - set server port
 
 ## /user-info
 Gets a JSON Array of User objects.
