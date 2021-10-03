@@ -17,9 +17,9 @@ export default class User {
     } else if (user1GroupIndex > user2GroupIndex) {
       return 1;
     } else {
-      if (user1.name < user2.name) {
+      if (user1.username < user2.username) {
         return -1;
-      } else if (user1.name > user2.name) {
+      } else if (user1.username > user2.username) {
         return 1;
       } else {
         return 0;
