@@ -1,0 +1,6 @@
+- implement caching https://www.npmjs.com/package/node-cache
+- investigate improving concurrent calls for getting user info
+- look into using group calls on the api to figure out group membership (ranks)
+- sort out sorting of returned users object
+- blackhole requests on non-defined routes
+- setup cors properly for hosting vs local
