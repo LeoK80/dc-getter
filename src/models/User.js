@@ -17,9 +17,9 @@ export default class User {
     } else if (user1GroupIndex > user2GroupIndex) {
       return 1;
     } else {
-      if (user1.username < user2.username) {
+      if (String(user1.username).toLowerCase() < String(user2.username).toLowerCase()) {
         return -1;
-      } else if (user1.username > user2.username) {
+      } else if (String(user1.username).toLowerCase() > String(user2.username).toLowerCase()) {
         return 1;
       } else {
         return 0;
