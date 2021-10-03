@@ -20,6 +20,6 @@ A User object is a lightweight version of the Discourse user (https://www.api.ex
 | name | user.username |
 | characterName | user.user_fields.8 |
 | characterClass | user.user_fields.9 |
-| characterRace | user.user_fields.10 |
+| race | user.user_fields.10 |
 | group | user.primary_group_name |
 
