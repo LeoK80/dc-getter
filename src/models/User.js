@@ -28,6 +28,13 @@ export default class User {
   };
 
   toString() {
-    console.log(`ID: ${this.id}, User: ${this.username}, character name: ${this.characterName}, class: ${this.characterClass}, race: ${this.race} in group: ${this.group}`);
+    console.log(
+      `ID: ${this.id},
+      Username: ${this.username},
+      characterName: ${this.characterName},
+      characterClass: ${this.characterClass},
+      characterRace: ${this.race},
+      Group: ${this.group}`
+    );
   }
 }
